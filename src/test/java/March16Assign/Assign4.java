@@ -21,15 +21,16 @@ public class Assign4 {
     public void setUp(){
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.navigate().to("https://www.amazon.com/");
+        driver.navigate().to("https://www.amazon.com/stores/page/CDF3296F-98B9-4A3E-BCA2-4834A6E96166");
     }
     @Test
     public void testMethod() throws AWTException {
 //        Scroll to the bottom of the page using a robot
         Robot r = new Robot();
-        r.mouseWheel(4);
+        r.mouseWheel(20);
+        r.mouseWheel(-8);
 //        Click on the "Back to top" web element
-        driver.findElement(By.id("navBackToTop")).click();
+        driver.findElement(By.className("navFooterBackToTopText")).click();
 //        Click on the Amazon logo at the bottom of the page (in the footer) using JavascriptExecutor
         WebElement logoToClick = driver.findElement(By.xpath("//a[@aria-label='Amazon US Home']"));
         JavascriptExecutor s = (JavascriptExecutor)driver;
