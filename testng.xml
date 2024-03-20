@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <test name="Assign2_5.java" parallel="methods" thread-count="3">
-        <classes>
-            <class name="TestNG.Assign2_5"/>
-        </classes>
-    </test>
-    <parameter name="target-browser" value="chrome"></parameter>
+<!--    <test name="Assign2_5.java" parallel="methods" thread-count="3">-->
+<!--        <classes>-->
+<!--            <class name="TestNG.Assign2_5"/>-->
+<!--        </classes>-->
+<!--    </test>-->
     <test name="Chrome Test">
+        <parameter name="target-browser" value="chrome"></parameter>
         <classes>
             <class name="TestNG.Assign5_5"/>
         </classes>
     </test>
-    <parameter name="target-browser" value="firefox"></parameter>
     <test name="FireFox Test">
+        <parameter name="target-browser" value="firefox"></parameter>
         <classes>
             <class name="TestNG.Assign5_5"/>
         </classes>
     </test>
-    <parameter name="target-browser" value="edge"></parameter>
     <test name="Edge Test">
+        <parameter name="target-browser" value="edge"></parameter>
         <classes>
             <class name="TestNG.Assign5_5"/>
         </classes>

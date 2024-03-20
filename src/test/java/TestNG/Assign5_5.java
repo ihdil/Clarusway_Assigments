@@ -8,10 +8,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import java.time.Duration;
 import java.util.List;
@@ -33,7 +30,7 @@ public class Assign5_5 {
 
     @Parameters({"target-browser"})
     @BeforeClass
-    public void beforeMethod(String targetBrowser) {
+    public void beforeMethod(String targetBrowser){
         switch (targetBrowser) {
             case "chrome" -> driver = new ChromeDriver();
             case "firefox" -> driver = new FirefoxDriver();
