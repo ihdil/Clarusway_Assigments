@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <test name="Assign2_5.java" parallel="methods" thread-count="3">
-        <classes>
-            <class name="TestNG.Assign2_5"/>
-        </classes>
-    </test>
     <test name="Chrome Test">
         <parameter name="target-browser" value="chrome"></parameter>
         <classes>
